@@ -1,6 +1,6 @@
 "use client";
-import { MapContextProvider } from "@/app/components/dashboard/create/MapContext";
-import CreateTour from "@/app/components/dashboard/create/CreateTour";
+import { MapContextProvider } from "./MapContext";
+import CreateTour from "./CreateTour";
 export default function page({ pageType }) {
   return (
     <>
