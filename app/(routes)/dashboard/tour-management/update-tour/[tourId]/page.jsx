@@ -1,5 +1,5 @@
 import { getTour } from "@/app/libs/getTour";
-import UpdateTour from "@/app/components/dashboard/create_Tour/UpdateTour";
+import UpdateTour from "@/app/components/dashboard/createTour/UpdateTour";
 
 export default async function page({ params }) {
   const tourId = params?.tourId;
