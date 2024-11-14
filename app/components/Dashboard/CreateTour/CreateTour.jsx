@@ -1,25 +1,19 @@
 "use client";
-import {
-  Input,
-  Typography,
-  Button,
-  Textarea,
-  input,
-} from "@material-tailwind/react";
+import { Input, Typography, Button, Textarea } from "@material-tailwind/react";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { HiOutlinePhotograph } from "react-icons/hi";
 import { HiOutlineFolderPlus } from "react-icons/hi2";
-import AddTourGuide from "@/app/components/Dashboard/CreateTour/AddTourGuide";
-import AddLocationPoint from "@/app/components/Dashboard/CreateTour/AddTourGuide";
+import AddTourGuide from "@/app/components/dashboard/createTour/AddTourGuide";
+import AddLocationPoint from "@/app/components/dashboard/createTour/AddLocationPoint";
 import { convertToDataURL } from "@/app/util/helper";
 import { HiOutlineX } from "react-icons/hi";
-import { useMapContext } from "@/app/components/Dashboard/CreateTour/MapContext";
+import { useMapContext } from "@/app/components/dashboard/createTour/MapContext";
 import updateTour from "@/app/libs/updateTour";
 
 export default function CreateTour({ actionType, tourData }) {
   const isUpdate = actionType === "update";
-  const { state, dispatch } = useMapContext();
+  const { dispatch } = useMapContext();
   const {
     register: registerTour,
     handleSubmit: handleSubmitTour,

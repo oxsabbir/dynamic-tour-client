@@ -1,11 +1,10 @@
 import { Typography } from "@/app/ui/materialExport";
 import dynamic from "next/dynamic";
-const TourMap = dynamic(() => import("@/app/components/Map/TourMap"), {
+const TourMap = dynamic(() => import("@/app/components/map/TourMap"), {
   ssr: false,
 });
 
 export default function Location({ places }) {
-  console.log(places);
   return (
     <>
       <div className="py-6">

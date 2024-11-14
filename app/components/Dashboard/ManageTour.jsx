@@ -1,9 +1,12 @@
 "use client";
-import Tour from "@/app/(routes)/tour/page";
+import dynamic from "next/dynamic";
+const TourMain = dynamic(() => import("@/app/components/Tour/TourMain"), {
+  ssr: false,
+});
 export default function ManageTour() {
   return (
     <>
-      <Tour pageType={"admin"} />
+      <TourMain pageType={"admin"} />
     </>
   );
 }

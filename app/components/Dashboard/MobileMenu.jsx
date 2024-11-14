@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Drawer } from "@material-tailwind/react";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Button } from "@/app/ui/materialExport";
-import SideNav from "@/app/components/Dashboard/SideNav";
-import ProfileMenu from "@/app/components/Header/ProfileMenu";
+import SideNav from "@/app/components/dashboard/SideNav";
+import ProfileMenu from "@/app/components/header/ProfileMenu";
 import { usePathname } from "next/navigation";
 export default function MobileMenu() {
   const [open, setOpen] = useState(false);
