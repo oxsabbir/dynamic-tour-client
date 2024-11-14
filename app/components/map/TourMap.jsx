@@ -14,7 +14,7 @@ import RoutingMachine from "./RoutingMachine";
 import SearchControll from "./SearchControll";
 import { OpenStreetMapProvider } from "leaflet-geosearch";
 import AddLocationDetails from "./AddLocationDetails";
-import { useMapContext } from "@/app/components/dashboard/createTour/MapContext";
+import { useMapContext } from "@/app/components/dashboard/create_Tour/MapContext";
 import SelectedLocation from "./SelectedLocation";
 
 const customIcon = new L.Icon({

@@ -3,7 +3,7 @@ import dynamic from "next/dynamic";
 const TourMap = dynamic(() => import("@/app/components/Map/TourMap"), {
   ssr: false,
 });
-import { useMapContext } from "@/app/components/dashboard/createTour/MapContext";
+import { useMapContext } from "@/app/components/dashboard/create_Tour/MapContext";
 import { useEffect } from "react";
 
 export default function AddLocationPoint({ registerTour, setValue }) {
