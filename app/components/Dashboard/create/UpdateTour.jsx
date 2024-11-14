@@ -1,6 +1,6 @@
 "use client";
-import CreateTour from "@/app/components/dashboard/createTour/CreateTour";
-import { MapContextProvider } from "@/app/components/dashboard/createTour/MapContext";
+import CreateTour from "@/app/components/dashboard/create/CreateTour";
+import { MapContextProvider } from "@/app/components/dashboard/create/MapContext";
 
 export default function UpdateTour({ tourData }) {
   return (
